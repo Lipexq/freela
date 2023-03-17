@@ -76,11 +76,12 @@
 }
 
 .header {
-    margin: 30px 0px 10px 0px;
+    padding: 40px 0px 100px 0px;
+    background-color: var(--main-dark-color);
     // border: 5px solid var(--main-dark-color);
 
     @media screen and (max-width: 700px) {
-        margin: 0px 0px 10px 0px;
+        padding: 0px 0px 40px 0px;
     }
 
     .container {
@@ -103,20 +104,25 @@
     margin-top: 40px;
     background-color: transparent;
     border-radius: 100px;
-    border: 2px solid var(--main-dark-color);
+    border: 2px solid var(--main-white-color);
     cursor: pointer;
 
+    @media screen and (max-width: 700px) {
+        display: none;
+    }
+
     &--review {
-        border: 2px solid var(--main-dark-color);
-        background-color: var(--main-white-color);
+        border: 2px solid var(--main-white-color);
+        background-color: transparent;
         margin-bottom: 30px;
+        display: flex;
     }
 
     .button_text {
         text-decoration: none;
         font-size: 17px;
         font-weight: 700;
-        color: var(--main-dark-color);
+        color: #22ABE6;
         align-items: center;
         width: 100%;
 
@@ -127,7 +133,7 @@
 }
 
 .button_header:hover {
-    background-color: var(--second-gray-color);
+    background-color: var(--main-white-color);
     border: 2px solid var(--second-gray-color);
 }
 
@@ -256,7 +262,7 @@
             width: 250px;
 
             @media screen and (max-width: 700px) {
-                width: 100%;
+                width: 50%;
                 padding: 60px 0px;
             }
         }
@@ -355,10 +361,48 @@
                 justify-content: center;
                 align-items: center;
                 text-transform: uppercase;
-                color: #22ABE6;
+                color: var(--main-white-color);
                 position: relative;
                 bottom: 6px;
             }
         }
+    }
+}
+
+.buttontest{
+    display: inline-block;
+    // width: 70px;
+    // height: 70px;
+    // background-color: #22ABE6;
+    // border-radius: 100px;
+    // cursor: pointer;
+    // border: none;
+    .teste{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        bottom: 10%;
+        z-index: 9999999999999;
+        padding-left: 21px;
+
+        &--call{
+            right:1px;
+            padding-left: 0px;
+            padding-right: 20px;   
+        }
+
+        .imgteste{
+            width: 80px;
+            height: 80px;
+            border-radius: 50px;
+            background-color: #22ABE6;
+            border: none;
+
+            img{
+                width: 60px;
+            }
+        }
+        
     }
 }
