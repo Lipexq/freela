@@ -5,7 +5,7 @@ $('#uniforms').owlCarousel({
     loop: true,
     dots: true,
     nav: true,
-    navText: ['<img src="/src/images/menorQblue.png">', '<img src="/src/images/maiorQbLue.png">'],
+    navText: ['<img src="src/images/menorQblue.png">', '<img src="src/images/maiorQbLue.png">'],
     navSpeed: 800,
     responsive: {
       0: {
